@@ -2,8 +2,16 @@ words = dict()
 
 
 def check(word):
-    for word in words:
-        if word:
-            return True
-        else:
-            return False
+    if word in words:
+        return True
+    else:
+        return False
+
+
+def load(dictionary):
+    file = open(dictionary, "r")
+    for line in file:
+        word = line.rstrip()
+        words.add(word)
+    file.close()
+    return True

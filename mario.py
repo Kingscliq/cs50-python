@@ -15,5 +15,6 @@
 
 for i in range(3):
     for j in range(3):
-        print("#")
+        # The end params is uded to modify the end of a line  in python
+        print("#", end="")
     print("")

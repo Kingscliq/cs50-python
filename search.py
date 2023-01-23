@@ -5,4 +5,4 @@ if 0 in numbers:
     print("Found")
     sys.exit(0)
 print("Not Found")
-sys.exit(1)
+sys.exit(1)  # Sys is used to terminate a program
